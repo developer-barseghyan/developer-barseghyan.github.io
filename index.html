@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tigran Barseghyan · iOS apps</title>
+<meta name="description" content="Apps by Tigran Barseghyan, an independent iOS developer in Armenia: GPS Test Satellite Tracker, Deed to Map, Map Area &amp; Distance Calc, Ruby Audio Guide, New Lines, Seen from Space and Lemma. Support, privacy policies and terms for each app.">
+<link rel="canonical" href="https://developer-barseghyan.github.io/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0c10" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tigran Barseghyan">
+<meta property="og:title" content="Tigran Barseghyan · iOS apps">
+<meta property="og:description" content="Satellite tools, maps and land measurement, audio guides and puzzle games for iPhone and iPad.">
+<meta property="og:url" content="https://developer-barseghyan.github.io/">
+<meta property="og:image" content="https://developer-barseghyan.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://developer-barseghyan.github.io/#me",
+      "name": "Tigran Barseghyan",
+      "url": "https://developer-barseghyan.github.io/",
+      "email": "mailto:developer.barseghyan@gmail.com",
+      "jobTitle": "iOS developer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "AM"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Apps",
+      "itemListElement": [
+        {
+          "@type": "SoftwareApplication",
+          "position": 1,
+          "name": "GPS Test Satellite Tracker",
+          "operatingSystem": "iOS",
+          "applicationCategory": "NavigationApplication",
+          "url": "https://apps.apple.com/app/id6791295491",
+          "author": {
+            "@id": "https://developer-barseghyan.github.io/#me"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 2,
+          "name": "Deed to Map: Metes & Bounds",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/app/id6816499245",
+          "author": {
+            "@id": "https://developer-barseghyan.github.io/#me"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 3,
+          "name": "Map Area & Distance Calc",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/app/id6811883479",
+          "author": {
+            "@id": "https://developer-barseghyan.github.io/#me"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 4,
+          "name": "Ruby Audio Guide",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/app/id1628887991",
+          "author": {
+            "@id": "https://developer-barseghyan.github.io/#me"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 5,
+          "name": "New Lines: Color Match",
+          "operatingSystem": "iOS, Android",
+          "applicationCategory": "GameApplication",
+          "url": "https://apps.apple.com/app/id1616641155",
+          "author": {
+            "@id": "https://developer-barseghyan.github.io/#me"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 6,
+          "name": "Seen from Space",
+          "operatingSystem": "iOS",
+          "applicationCategory": "ReferenceApplication",
+          "url": "https://developer-barseghyan.github.io/seen-from-space-support/",
+          "author": {
+            "@id": "https://developer-barseghyan.github.io/#me"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 7,
+          "name": "Lemma: Logic Puzzles",
+          "operatingSystem": "iOS",
+          "applicationCategory": "GameApplication",
+          "url": "https://developer-barseghyan.github.io/lemma-support/",
+          "author": {
+            "@id": "https://developer-barseghyan.github.io/#me"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --bg:#f5f5f7;
+  --bg-2:#ffffff;
+  --card:#ffffff;
+  --card-hover:#ffffff;
+  --text:#1d1d1f;
+  --muted:#6e6e73;
+  --faint:#86868b;
+  --rule:rgba(0,0,0,.08);
+  --chip:rgba(0,0,0,.045);
+  --link:#0066cc;
+  --shadow:0 1px 2px rgba(0,0,0,.04), 0 8px 28px rgba(0,0,0,.06);
+  --shadow-hover:0 2px 4px rgba(0,0,0,.05), 0 18px 48px rgba(0,0,0,.10);
+  --icon-shadow:0 1px 2px rgba(0,0,0,.10), 0 6px 16px rgba(0,0,0,.12);
+  --glow-strength:.22;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0b0c10;
+    --bg-2:#0b0c10;
+    --card:#15171c;
+    --card-hover:#1a1c22;
+    --text:#f5f5f7;
+    --muted:#a1a1a6;
+    --faint:#7c7c82;
+    --rule:rgba(255,255,255,.09);
+    --chip:rgba(255,255,255,.07);
+    --link:#4da3ff;
+    --shadow:0 0 0 1px rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.35);
+    --shadow-hover:0 0 0 1px rgba(255,255,255,.10), 0 20px 50px rgba(0,0,0,.5);
+    --icon-shadow:0 0 0 .5px rgba(255,255,255,.10), 0 8px 20px rgba(0,0,0,.5);
+    --glow-strength:.28;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{
+  margin:0;min-height:100vh;color:var(--text);background:var(--bg);overflow-x:hidden;
+  font:17px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:16px;top:12px;background:var(--card);padding:8px 12px;z-index:9}
+
+/* Header */
+.top{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.brand{display:flex;align-items:center;gap:10px;color:var(--text);font-weight:600;letter-spacing:-.01em}
+.brand:hover{text-decoration:none}
+.mono{
+  width:30px;height:30px;border-radius:8px;display:grid;place-items:center;
+  background:linear-gradient(145deg,#2b2d35,#121318);color:#fff;
+  font:700 12px/1 -apple-system,BlinkMacSystemFont,"SF Pro Display",sans-serif;letter-spacing:.02em;
+  box-shadow:0 0 0 .5px rgba(255,255,255,.12) inset;
+}
+.top nav{display:flex;gap:6px}
+.top nav a{color:var(--muted);font-size:15px;padding:6px 12px;border-radius:999px}
+.top nav a:hover{color:var(--text);background:var(--chip);text-decoration:none}
+
+/* Hero */
+.hero{position:relative;padding:72px 0 64px;text-align:center;isolation:isolate}
+.hero::before{
+  content:"";position:absolute;left:50%;width:100vw;transform:translateX(-50%);top:-120px;height:640px;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(28% 40% at 22% 55%, rgba(53,118,222,.22), transparent 70%),
+    radial-gradient(24% 38% at 50% 40%, rgba(247,166,60,.20), transparent 70%),
+    radial-gradient(26% 40% at 78% 58%, rgba(127,207,149,.20), transparent 70%);
+  -webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent);
+}
+.fan{display:flex;justify-content:center;margin:0 auto 34px;height:96px}
+.fan img{
+  width:76px;height:76px;border-radius:17px;margin:0 -7px;box-shadow:var(--icon-shadow);
+  transition:transform .35s cubic-bezier(.2,.8,.2,1);
+}
+.fan img:nth-child(1){transform:translateY(22px) rotate(-15deg);position:relative;z-index:0}
+.fan img:nth-child(2){transform:translateY(9px) rotate(-10deg);position:relative;z-index:1}
+.fan img:nth-child(3){transform:translateY(2px) rotate(-5deg);position:relative;z-index:2}
+.fan img:nth-child(4){transform:translateY(0px) rotate(0deg);position:relative;z-index:3}
+.fan img:nth-child(5){transform:translateY(2px) rotate(5deg);position:relative;z-index:2}
+.fan img:nth-child(6){transform:translateY(9px) rotate(10deg);position:relative;z-index:1}
+.fan img:nth-child(7){transform:translateY(22px) rotate(15deg);position:relative;z-index:0}
+.hero:hover .fan img{transform:translateY(0) rotate(0)}
+.eyebrow{margin:0 0 12px;color:var(--muted);font-size:15px;font-weight:500;letter-spacing:.01em}
+h1{
+  margin:0 auto;max-width:15ch;
+  font:700 clamp(40px,6.4vw,68px)/1.04 -apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,sans-serif;
+  letter-spacing:-.035em;text-wrap:balance;
+}
+.lede{margin:20px auto 0;max-width:34em;color:var(--muted);font-size:clamp(18px,2.1vw,21px);line-height:1.45;text-wrap:balance}
+.cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-size:16px;font-weight:600;
+  background:var(--text);color:var(--bg);
+}
+.btn:hover{text-decoration:none;opacity:.88}
+.btn.ghost{background:var(--chip);color:var(--text)}
+
+/* Apps */
+section{scroll-margin-top:16px}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin:8px 0 22px}
+h2{margin:0;font:700 32px/1.1 -apple-system,BlinkMacSystemFont,"SF Pro Display",sans-serif;letter-spacing:-.025em}
+.section-head p{margin:0;color:var(--muted);font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.app{
+  --glow:#888;
+  position:relative;display:flex;flex-direction:column;gap:18px;
+  padding:26px;border-radius:28px;background:var(--card);box-shadow:var(--shadow);
+  overflow:hidden;isolation:isolate;
+  transition:box-shadow .3s, transform .3s cubic-bezier(.2,.8,.2,1), background .3s;
+}
+.app::before{ /* the icon's colour, bleeding softly into the card */
+  content:"";position:absolute;width:300px;height:300px;left:-90px;top:-130px;z-index:-1;border-radius:50%;
+  background:radial-gradient(circle, var(--glow), transparent 68%);opacity:var(--glow-strength);
+  transition:opacity .3s;
+}
+.app:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px);background:var(--card-hover)}
+.app:hover::before{opacity:calc(var(--glow-strength) * 1.6)}
+.app-head{display:flex;gap:18px;align-items:center}
+.app-icon{
+  flex:0 0 auto;width:88px;height:88px;border-radius:20px; /* ~22.4%: the iOS icon corner */
+  box-shadow:var(--icon-shadow);display:block;
+}
+.app h3{margin:0;font:650 21px/1.2 -apple-system,BlinkMacSystemFont,"SF Pro Display",sans-serif;letter-spacing:-.015em}
+.meta{margin:5px 0 0;display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:12.5px;font-weight:600;color:var(--muted);background:var(--chip);padding:3px 9px;border-radius:999px;letter-spacing:.01em}
+.chip.soon{color:#b25e00;background:rgba(247,166,60,.16)}
+@media (prefers-color-scheme: dark){.chip.soon{color:#f7a63c}}
+.app p.desc{margin:0;color:var(--muted);font-size:16px;line-height:1.5;flex:1}
+.app-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:16px;border-top:1px solid var(--rule)}
+.links{display:flex;gap:4px 16px;flex-wrap:wrap;font-size:15px}
+.links a{font-weight:500}
+.badge{display:block;height:40px}
+.badge img{height:40px;width:auto;display:block}
+.badge img.badge-dark{display:none}
+@media (prefers-color-scheme: dark){.badge img.badge-light{display:none}.badge img.badge-dark{display:block}}
+
+/* Contact */
+.contact{
+  margin:72px 0 0;padding:44px 40px;border-radius:32px;background:var(--card);box-shadow:var(--shadow);
+  display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:center;
+}
+.contact h2{font-size:30px}
+.contact p{margin:10px 0 0;color:var(--muted)}
+.contact .mail{justify-self:end;text-align:right}
+.contact .mail a.btn{font-size:17px}
+.contact .mail small{display:block;margin-top:10px;color:var(--faint);font-size:14px}
+
+footer{padding:48px 0 56px;color:var(--faint);font-size:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer a{color:var(--faint)}
+
+@media (max-width:800px){
+  .grid{grid-template-columns:1fr}
+  .contact{grid-template-columns:1fr;padding:32px 26px}
+  .contact .mail{justify-self:start;text-align:left}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .hero{padding:48px 0 44px}
+  .fan{height:76px;margin-bottom:26px}
+  .fan img{width:56px;height:56px;border-radius:12.5px;margin:0 -6px}
+  .top nav a{padding:6px 9px}
+  .app{padding:20px;border-radius:24px}
+  .app-icon{width:72px;height:72px;border-radius:16px}
+  .section-head{flex-direction:column;gap:4px}
+  h2{font-size:28px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#apps">Skip to the apps</a>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/" aria-label="Tigran Barseghyan, home"><span class="mono" aria-hidden="true">TB</span>Tigran Barseghyan</a>
+    <nav aria-label="Main">
+      <a href="#apps">Apps</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="fan" aria-hidden="true">
+      <img src="assets/icons/gps-test.png" alt="" width="76" height="76">
+      <img src="assets/icons/deed-to-map.png" alt="" width="76" height="76">
+      <img src="assets/icons/map-area.png" alt="" width="76" height="76">
+      <img src="assets/icons/ruby.png" alt="" width="76" height="76">
+      <img src="assets/icons/new-lines.png" alt="" width="76" height="76">
+      <img src="assets/icons/seen-from-space.png" alt="" width="76" height="76">
+      <img src="assets/icons/lemma.png" alt="" width="76" height="76">
+    </div>
+    <p class="eyebrow">Independent iOS developer · Armenia</p>
+    <h1 id="hero-title">Focused apps for iPhone and iPad.</h1>
+    <p class="lede">Satellite tracking and imagery, maps and land measurement, audio guides to Armenia, and puzzle games. Each app has its own support page, privacy policy and terms below.</p>
+    <div class="cta">
+      <a class="btn" href="#apps">See the apps</a>
+      <a class="btn ghost" href="mailto:developer.barseghyan@gmail.com">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="apps" aria-labelledby="apps-title">
+    <div class="section-head">
+      <h2 id="apps-title">Apps</h2>
+      <p>Tap Support for help, FAQs and contact.</p>
+    </div>
+
+    <div class="grid">
+
+      <article class="app" style="--glow:#3f7fd8">
+        <div class="app-head">
+          <img class="app-icon" src="assets/icons/gps-test.png" alt="GPS Test Satellite Tracker app icon" width="88" height="88" loading="lazy">
+          <div>
+            <h3>GPS Test Satellite Tracker</h3>
+            <div class="meta"><span class="chip">Navigation</span><span class="chip">iPhone</span></div>
+          </div>
+        </div>
+        <p class="desc">Track Starlink, the ISS and other satellites on a live radar, and check your GPS fix quality, accuracy and the navigation satellites overhead.</p>
+        <div class="app-foot">
+          <nav class="links" aria-label="GPS Test Satellite Tracker links">
+            <a href="/satellite-tracker-support/">Support</a>
+            <a href="/satellite-tracker-support/privacy">Privacy</a>
+            <a href="/satellite-tracker-support/terms">Terms</a>
+          </nav>
+          <a class="badge" href="https://apps.apple.com/app/id6791295491" aria-label="Download GPS Test Satellite Tracker on the App Store">
+            <img class="badge-light" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+            <img class="badge-dark" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+          </a>
+        </div>
+      </article>
+
+      <article class="app" style="--glow:#4f9ad0">
+        <div class="app-head">
+          <img class="app-icon" src="assets/icons/deed-to-map.png" alt="Deed to Map: Metes &amp; Bounds app icon" width="88" height="88" loading="lazy">
+          <div>
+            <h3>Deed to Map: Metes &amp; Bounds</h3>
+            <div class="meta"><span class="chip">Property &amp; land</span><span class="chip">iPhone</span></div>
+          </div>
+        </div>
+        <p class="desc">Reads the boundary description on a US property deed and plots the parcel on satellite imagery, so you can see the lines and walk to each corner.</p>
+        <div class="app-foot">
+          <nav class="links" aria-label="Deed to Map: Metes &amp; Bounds links">
+            <a href="/deed-to-map-support/">Support</a>
+            <a href="/deed-to-map-support/privacy">Privacy</a>
+            <a href="/deed-to-map-support/terms">Terms</a>
+          </nav>
+          <a class="badge" href="https://apps.apple.com/app/id6816499245" aria-label="Download Deed to Map: Metes &amp; Bounds on the App Store">
+            <img class="badge-light" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+            <img class="badge-dark" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+          </a>
+        </div>
+      </article>
+
+      <article class="app" style="--glow:#7fcf95">
+        <div class="app-head">
+          <img class="app-icon" src="assets/icons/map-area.png" alt="Map Area &amp; Distance Calc app icon" width="88" height="88" loading="lazy">
+          <div>
+            <h3>Map Area &amp; Distance Calc</h3>
+            <div class="meta"><span class="chip">Measurement</span><span class="chip">iPhone &amp; iPad</span></div>
+          </div>
+        </div>
+        <p class="desc">Drop a few points on a satellite, street or terrain map and see the area, perimeter or path length. KML, GPX and KMZ import and export.</p>
+        <div class="app-foot">
+          <nav class="links" aria-label="Map Area &amp; Distance Calc links">
+            <a href="/map-area-calculator-support/">Support</a>
+            <a href="/map-area-calculator-support/privacy">Privacy</a>
+            <a href="/map-area-calculator-support/terms">Terms</a>
+          </nav>
+          <a class="badge" href="https://apps.apple.com/app/id6811883479" aria-label="Download Map Area &amp; Distance Calc on the App Store">
+            <img class="badge-light" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+            <img class="badge-dark" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+          </a>
+        </div>
+      </article>
+
+      <article class="app" style="--glow:#3b8fd9">
+        <div class="app-head">
+          <img class="app-icon" src="assets/icons/ruby.png" alt="Ruby Audio Guide app icon" width="88" height="88" loading="lazy">
+          <div>
+            <h3>Ruby Audio Guide</h3>
+            <div class="meta"><span class="chip">Travel</span><span class="chip">iPhone</span></div>
+          </div>
+        </div>
+        <p class="desc">Narrated audio guides to Armenia: Yerevan, Garni, Geghard, Khor Virap, Tatev, Sevanavank and more. Download once and listen anywhere, offline.</p>
+        <div class="app-foot">
+          <nav class="links" aria-label="Ruby Audio Guide links">
+            <a href="/ruby-support/">Support</a>
+            <a href="/ruby-support/privacy">Privacy</a>
+            <a href="/ruby-support/terms">Terms</a>
+          </nav>
+          <a class="badge" href="https://apps.apple.com/app/id1628887991" aria-label="Download Ruby Audio Guide on the App Store">
+            <img class="badge-light" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+            <img class="badge-dark" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+          </a>
+        </div>
+      </article>
+
+      <article class="app" style="--glow:#ef5d7a">
+        <div class="app-head">
+          <img class="app-icon" src="assets/icons/new-lines.png" alt="New Lines: Color Match app icon" width="88" height="88" loading="lazy">
+          <div>
+            <h3>New Lines: Color Match</h3>
+            <div class="meta"><span class="chip">Puzzle game</span><span class="chip">iPhone &amp; Android</span></div>
+          </div>
+        </div>
+        <p class="desc">The classic colour-lines puzzle, remade. Line up five balls of a colour to clear them, across levels that grow, add colours and race the clock.</p>
+        <div class="app-foot">
+          <nav class="links" aria-label="New Lines: Color Match links">
+            <a href="/newlines-support/">Support</a>
+            <a href="/newlines-support/privacy">Privacy</a>
+            <a href="/newlines-support/terms">Terms</a>
+          </nav>
+          <a class="badge" href="https://apps.apple.com/app/id1616641155" aria-label="Download New Lines: Color Match on the App Store">
+            <img class="badge-light" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+            <img class="badge-dark" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+          </a>
+        </div>
+      </article>
+
+      <article class="app" style="--glow:#3576de">
+        <div class="app-head">
+          <img class="app-icon" src="assets/icons/seen-from-space.png" alt="Seen from Space app icon" width="88" height="88" loading="lazy">
+          <div>
+            <h3>Seen from Space</h3>
+            <div class="meta"><span class="chip">Satellite imagery</span><span class="chip">iPhone</span></div>
+          </div>
+        </div>
+        <p class="desc">Fresh, free satellite images of any place on Earth, and a prediction of when the next one will be taken, from 90 Earth-imaging satellites.</p>
+        <div class="app-foot">
+          <nav class="links" aria-label="Seen from Space links">
+            <a href="/seen-from-space-support/">Support</a>
+            <a href="/seen-from-space-support/privacy">Privacy</a>
+            <a href="/seen-from-space-support/terms">Terms</a>
+          </nav>
+          <span class="chip soon">Coming soon</span>
+        </div>
+      </article>
+
+      <article class="app" style="--glow:#f7a63c">
+        <div class="app-head">
+          <img class="app-icon" src="assets/icons/lemma.png" alt="Lemma: Logic Puzzles app icon" width="88" height="88" loading="lazy">
+          <div>
+            <h3>Lemma: Logic Puzzles</h3>
+            <div class="meta"><span class="chip">Puzzle game</span><span class="chip">iPhone &amp; iPad</span></div>
+          </div>
+        </div>
+        <p class="desc">Nonogram, Shikaku, Star Battle and Hashi. Every puzzle has exactly one solution and can be solved by reasoning alone, with a new daily for each.</p>
+        <div class="app-foot">
+          <nav class="links" aria-label="Lemma: Logic Puzzles links">
+            <a href="/lemma-support/">Support</a>
+            <a href="/lemma-support/privacy">Privacy</a>
+            <a href="/lemma-support/terms">Terms</a>
+          </nav>
+          <span class="chip soon">Coming soon</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div>
+      <h2 id="contact-title">Questions or feedback?</h2>
+      <p>Write about any of the apps: a bug, an idea, a purchase that did not arrive. Every message is read, and answered by the person who builds the app.</p>
+    </div>
+    <div class="mail">
+      <a class="btn" href="mailto:developer.barseghyan@gmail.com">developer.barseghyan@gmail.com</a>
+      <small>Usually a reply within two business days.</small>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Tigran Barseghyan</span>
+    <span>Apple, the Apple logo and App Store are trademarks of Apple Inc.</span>
+  </footer>
+</div>
+</body>
+</html>
