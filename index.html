@@ -80,7 +80,7 @@
           "@type": "SoftwareApplication",
           "position": 4,
           "name": "Ruby Audio Guide",
-          "operatingSystem": "iOS",
+          "operatingSystem": "iOS, Android",
           "applicationCategory": "TravelApplication",
           "url": "https://apps.apple.com/app/id1628887991",
           "author": {
@@ -299,6 +299,8 @@ h2{margin:0;font:700 32px/1.1 -apple-system,BlinkMacSystemFont,"SF Pro Display",
 .badge img{height:40px;width:auto;display:block}
 .badge img.badge-dark{display:none}
 @media (prefers-color-scheme: dark){.badge img.badge-light{display:none}.badge img.badge-dark{display:block}}
+.badges{display:flex;gap:10px;flex-wrap:wrap}
+.badge.play img{height:59.5px;margin:-9.75px} /* Google's PNG carries transparent padding; this matches the App Store badge's 40px */
 
 /* Contact */
 .contact{
@@ -393,25 +395,6 @@ footer a{color:var(--faint)}
         </div>
       </article>
 
-      <article class="app" style="--glow:#9fb3d6">
-        <div class="app-head">
-          <img class="app-icon" src="assets/icons/tint-meter.png" alt="Tint Meter app icon" width="88" height="88" loading="lazy">
-          <div>
-            <h3>Tint Meter</h3>
-            <div class="meta"><span class="chip">Utilities</span><span class="chip">iPhone</span></div>
-          </div>
-        </div>
-        <p class="desc">Estimate a window's tint, its VLT, with the iPhone camera alone. Window down, window up, and the result comes with its uncertainty and the legal limit for 83 regions.</p>
-        <div class="app-foot">
-          <nav class="links" aria-label="Tint Meter links">
-            <a href="/tint-meter-support/">Support</a>
-            <a href="/tint-meter-support/privacy">Privacy</a>
-            <a href="/tint-meter-support/terms">Terms</a>
-          </nav>
-          <span class="chip soon">Coming soon</span>
-        </div>
-      </article>
-
       <article class="app" style="--glow:#4f9ad0">
         <div class="app-head">
           <img class="app-icon" src="assets/icons/deed-to-map.png" alt="Deed to Map: Metes &amp; Bounds app icon" width="88" height="88" loading="lazy">
@@ -461,7 +444,7 @@ footer a{color:var(--faint)}
           <img class="app-icon" src="assets/icons/ruby.png" alt="Ruby Audio Guide app icon" width="88" height="88" loading="lazy">
           <div>
             <h3>Ruby Audio Guide</h3>
-            <div class="meta"><span class="chip">Travel</span><span class="chip">iPhone</span></div>
+            <div class="meta"><span class="chip">Travel</span><span class="chip">iPhone &amp; Android</span></div>
           </div>
         </div>
         <p class="desc">Narrated audio guides to Armenia: Yerevan, Garni, Geghard, Khor Virap, Tatev, Sevanavank and more. Download once and listen anywhere, offline.</p>
@@ -471,10 +454,15 @@ footer a{color:var(--faint)}
             <a href="/ruby-support/privacy">Privacy</a>
             <a href="/ruby-support/terms">Terms</a>
           </nav>
-          <a class="badge" href="https://apps.apple.com/app/id1628887991" aria-label="Download Ruby Audio Guide on the App Store">
-            <img class="badge-light" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
-            <img class="badge-dark" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
-          </a>
+          <div class="badges">
+            <a class="badge" href="https://apps.apple.com/app/id1628887991" aria-label="Download Ruby Audio Guide on the App Store">
+              <img class="badge-light" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+              <img class="badge-dark" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+            </a>
+            <a class="badge play" href="https://play.google.com/store/apps/details?id=com.tbnt.ruby.android" aria-label="Get Ruby Audio Guide on Google Play">
+              <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="154" height="60" loading="lazy">
+            </a>
+          </div>
         </div>
       </article>
 
@@ -493,10 +481,15 @@ footer a{color:var(--faint)}
             <a href="/newlines-support/privacy">Privacy</a>
             <a href="/newlines-support/terms">Terms</a>
           </nav>
-          <a class="badge" href="https://apps.apple.com/app/id1616641155" aria-label="Download New Lines: Color Match on the App Store">
-            <img class="badge-light" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
-            <img class="badge-dark" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
-          </a>
+          <div class="badges">
+            <a class="badge" href="https://apps.apple.com/app/id1616641155" aria-label="Download New Lines: Color Match on the App Store">
+              <img class="badge-light" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+              <img class="badge-dark" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
+            </a>
+            <a class="badge play" href="https://play.google.com/store/apps/details?id=com.tb.norlines" aria-label="Get New Lines: Color Match on Google Play">
+              <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="154" height="60" loading="lazy">
+            </a>
+          </div>
         </div>
       </article>
 
@@ -519,6 +512,25 @@ footer a{color:var(--faint)}
             <img class="badge-light" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
             <img class="badge-dark" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
           </a>
+        </div>
+      </article>
+
+      <article class="app" style="--glow:#9fb3d6">
+        <div class="app-head">
+          <img class="app-icon" src="assets/icons/tint-meter.png" alt="Tint Meter app icon" width="88" height="88" loading="lazy">
+          <div>
+            <h3>Tint Meter</h3>
+            <div class="meta"><span class="chip">Utilities</span><span class="chip">iPhone</span></div>
+          </div>
+        </div>
+        <p class="desc">Estimate a window's tint, its VLT, with the iPhone camera alone. Window down, window up, and the result comes with its uncertainty and the legal limit for 83 regions.</p>
+        <div class="app-foot">
+          <nav class="links" aria-label="Tint Meter links">
+            <a href="/tint-meter-support/">Support</a>
+            <a href="/tint-meter-support/privacy">Privacy</a>
+            <a href="/tint-meter-support/terms">Terms</a>
+          </nav>
+          <span class="chip soon">Coming soon</span>
         </div>
       </article>
 
@@ -595,7 +607,7 @@ footer a{color:var(--faint)}
 
   <footer>
     <span>&copy; 2026 Tigran Barseghyan</span>
-    <span>Apple, the Apple logo and App Store are trademarks of Apple Inc.</span>
+    <span>Apple, the Apple logo and App Store are trademarks of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.</span>
   </footer>
 </div>
 </body>
