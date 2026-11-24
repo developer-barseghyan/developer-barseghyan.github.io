@@ -12,3 +12,6 @@ Adding an app: copy one `<article class="app">` block in `index.html`, add its i
 JSON-LD list at the top. When an app goes live, replace its `Coming soon` chip with the
 App Store badge block from an app that already has one, using the app's
 `https://apps.apple.com/app/id…` link.
+
+Adding an app's YouTube videos: copy a `<nav class="videos">` block from an app that has one
+to just above the new app's `app-foot`, then change the app name and the Demo and Short links.

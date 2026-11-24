@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tigran Barseghyan · iOS apps</title>
-<meta name="description" content="Apps by Tigran Barseghyan, an independent iOS developer in Armenia: GPS Test Satellite Tracker, Deed to Map, Map Area &amp; Distance Calc, Ruby Audio Guide, New Lines, Seen from Space, Lemma, BinoZoom GPS, Light Meter, DroneMap, Mountain Weather: Summit and Hand and Foot (Android). Support, privacy policies and terms for each app.">
+<meta name="description" content="Apps by Tigran Barseghyan, an independent iOS developer in Armenia: GPS Test Satellite Tracker, Deed to Map, Map Area &amp; Distance Calc, Ruby Audio Guide, New Lines, Seen from Space, Lemma, BinoZoom GPS, Light Meter, DroneMap, Land Terrain, Mountain Weather: Summit and Hand and Foot (Android). Support, privacy policies and terms for each app.">
 <link rel="canonical" href="https://developer-barseghyan.github.io/">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
@@ -185,6 +185,17 @@
           "author": {
             "@id": "https://developer-barseghyan.github.io/#me"
           }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 14,
+          "name": "Land Terrain: Topo & Drainage",
+          "operatingSystem": "iOS",
+          "applicationCategory": "NavigationApplication",
+          "url": "https://developer-barseghyan.github.io/land-terrain-support/",
+          "author": {
+            "@id": "https://developer-barseghyan.github.io/#me"
+          }
         }
       ]
     }
@@ -325,6 +336,13 @@ h2{margin:0;font:700 32px/1.1 -apple-system,BlinkMacSystemFont,"SF Pro Display",
 .chip.soon{color:#b25e00;background:rgba(247,166,60,.16)}
 @media (prefers-color-scheme: dark){.chip.soon{color:#f7a63c}}
 .app p.desc{margin:0;color:var(--muted);font-size:16px;line-height:1.5;flex:1}
+.videos{display:flex;gap:8px;flex-wrap:wrap}
+.videos a{
+  display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;
+  background:var(--chip);color:var(--text);font-size:15px;font-weight:500;line-height:1.4;
+}
+.videos a:hover{text-decoration:none;background:var(--rule)}
+.videos svg{display:block;flex:0 0 auto}
 .app-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:16px;border-top:1px solid var(--rule)}
 .links{display:flex;gap:4px 16px;flex-wrap:wrap;font-size:15px}
 .links a{font-weight:500}
@@ -369,6 +387,10 @@ footer a{color:var(--faint)}
 </head>
 <body>
 <a class="skip" href="#apps">Skip to the apps</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="yt" viewBox="0 0 24 17"><rect width="24" height="17" rx="4.5" fill="#f00"/><path d="M9.7 4.9v7.2l6.2-3.6z" fill="#fff"/></symbol>
+</svg>
 
 <div class="wrap">
   <header class="top">
@@ -415,6 +437,10 @@ footer a{color:var(--faint)}
           </div>
         </div>
         <p class="desc">Track Starlink, the ISS and other satellites on a live radar, and check your GPS fix quality, accuracy and the navigation satellites overhead.</p>
+        <nav class="videos" aria-label="GPS Test Satellite Tracker videos">
+          <a href="https://youtu.be/XK2Jotmy--M" aria-label="Watch the GPS Test Satellite Tracker demo on YouTube"><svg viewBox="0 0 24 17" width="20" height="14" aria-hidden="true"><use href="#yt"/></svg>Demo</a>
+          <a href="https://www.youtube.com/shorts/mqEj7X1hK-4" aria-label="Watch the GPS Test Satellite Tracker Short on YouTube"><svg viewBox="0 0 24 17" width="20" height="14" aria-hidden="true"><use href="#yt"/></svg>Short</a>
+        </nav>
         <div class="app-foot">
           <nav class="links" aria-label="GPS Test Satellite Tracker links">
             <a href="/satellite-tracker-support/">Support</a>
@@ -437,6 +463,10 @@ footer a{color:var(--faint)}
           </div>
         </div>
         <p class="desc">Reads the boundary description on a US property deed and plots the parcel on satellite imagery, so you can see the lines and walk to each corner.</p>
+        <nav class="videos" aria-label="Deed to Map: Metes &amp; Bounds videos">
+          <a href="https://youtu.be/IgeanZB4Ckc" aria-label="Watch the Deed to Map: Metes &amp; Bounds demo on YouTube"><svg viewBox="0 0 24 17" width="20" height="14" aria-hidden="true"><use href="#yt"/></svg>Demo</a>
+          <a href="https://www.youtube.com/shorts/pdV_jShEgV0" aria-label="Watch the Deed to Map: Metes &amp; Bounds Short on YouTube"><svg viewBox="0 0 24 17" width="20" height="14" aria-hidden="true"><use href="#yt"/></svg>Short</a>
+        </nav>
         <div class="app-foot">
           <nav class="links" aria-label="Deed to Map: Metes &amp; Bounds links">
             <a href="/deed-to-map-support/">Support</a>
@@ -459,6 +489,10 @@ footer a{color:var(--faint)}
           </div>
         </div>
         <p class="desc">Drop a few points on a satellite, street or terrain map and see the area, perimeter or path length. KML, GPX and KMZ import and export.</p>
+        <nav class="videos" aria-label="Map Area &amp; Distance Calc videos">
+          <a href="https://youtu.be/_KI6Qb7woFY" aria-label="Watch the Map Area &amp; Distance Calc demo on YouTube"><svg viewBox="0 0 24 17" width="20" height="14" aria-hidden="true"><use href="#yt"/></svg>Demo</a>
+          <a href="https://www.youtube.com/shorts/3tc9UG7tiRM" aria-label="Watch the Map Area &amp; Distance Calc Short on YouTube"><svg viewBox="0 0 24 17" width="20" height="14" aria-hidden="true"><use href="#yt"/></svg>Short</a>
+        </nav>
         <div class="app-foot">
           <nav class="links" aria-label="Map Area &amp; Distance Calc links">
             <a href="/map-area-calculator-support/">Support</a>
@@ -481,6 +515,10 @@ footer a{color:var(--faint)}
           </div>
         </div>
         <p class="desc">Narrated audio guides to Armenia: Yerevan, Garni, Geghard, Khor Virap, Tatev, Sevanavank and more. Download once and listen anywhere, offline.</p>
+        <nav class="videos" aria-label="Ruby Audio Guide videos">
+          <a href="https://youtu.be/fbAo5dsbeQ4" aria-label="Watch the Ruby Audio Guide demo on YouTube"><svg viewBox="0 0 24 17" width="20" height="14" aria-hidden="true"><use href="#yt"/></svg>Demo</a>
+          <a href="https://www.youtube.com/shorts/ASbImoIjeW0" aria-label="Watch the Ruby Audio Guide Short on YouTube"><svg viewBox="0 0 24 17" width="20" height="14" aria-hidden="true"><use href="#yt"/></svg>Short</a>
+        </nav>
         <div class="app-foot">
           <nav class="links" aria-label="Ruby Audio Guide links">
             <a href="/ruby-support/">Support</a>
@@ -556,6 +594,10 @@ footer a{color:var(--faint)}
           </div>
         </div>
         <p class="desc">Fresh, free satellite images of any place on Earth, and a prediction of when the next one will be taken, from 90 Earth-imaging satellites.</p>
+        <nav class="videos" aria-label="Seen from Space videos">
+          <a href="https://youtu.be/uoFaE_p80vE" aria-label="Watch the Seen from Space demo on YouTube"><svg viewBox="0 0 24 17" width="20" height="14" aria-hidden="true"><use href="#yt"/></svg>Demo</a>
+          <a href="https://www.youtube.com/shorts/GUdP8TgYonA" aria-label="Watch the Seen from Space Short on YouTube"><svg viewBox="0 0 24 17" width="20" height="14" aria-hidden="true"><use href="#yt"/></svg>Short</a>
+        </nav>
         <div class="app-foot">
           <nav class="links" aria-label="Seen from Space links">
             <a href="/seen-from-space-support/">Support</a>
@@ -578,6 +620,10 @@ footer a{color:var(--faint)}
           </div>
         </div>
         <p class="desc">Check a drone flight plan against the shape of the ground: where it runs into terrain, the Return-to-Home height that clears every ridge, and where you lose sight. All on the iPhone.</p>
+        <nav class="videos" aria-label="DroneMap: Terrain &amp; RTH Check videos">
+          <a href="https://youtu.be/jCz-CAKK0UA" aria-label="Watch the DroneMap: Terrain &amp; RTH Check demo on YouTube"><svg viewBox="0 0 24 17" width="20" height="14" aria-hidden="true"><use href="#yt"/></svg>Demo</a>
+          <a href="https://www.youtube.com/shorts/z2KltNgZyJM" aria-label="Watch the DroneMap: Terrain &amp; RTH Check Short on YouTube"><svg viewBox="0 0 24 17" width="20" height="14" aria-hidden="true"><use href="#yt"/></svg>Short</a>
+        </nav>
         <div class="app-foot">
           <nav class="links" aria-label="DroneMap: Terrain &amp; RTH Check links">
             <a href="/dronemap-support/">Support</a>
@@ -588,6 +634,25 @@ footer a{color:var(--faint)}
             <img class="badge-light" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
             <img class="badge-dark" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store" width="120" height="40" loading="lazy">
           </a>
+        </div>
+      </article>
+
+      <article class="app" style="--glow:#6fb85c">
+        <div class="app-head">
+          <img class="app-icon" src="assets/icons/land-terrain.png" alt="Land Terrain: Topo &amp; Drainage app icon" width="88" height="88" loading="lazy">
+          <div>
+            <h3>Land Terrain: Topo &amp; Drainage</h3>
+            <div class="meta"><span class="chip">Property &amp; land</span><span class="chip">iPhone &amp; iPad</span></div>
+          </div>
+        </div>
+        <p class="desc">See where the water goes on your land in the United States, where a pond could sit and how much it would hold, and how steep a driveway is, from free USGS lidar elevation.</p>
+        <div class="app-foot">
+          <nav class="links" aria-label="Land Terrain: Topo &amp; Drainage links">
+            <a href="/land-terrain-support/">Support</a>
+            <a href="/land-terrain-support/privacy">Privacy</a>
+            <a href="/land-terrain-support/terms">Terms</a>
+          </nav>
+          <span class="chip soon">Coming soon</span>
         </div>
       </article>
 
@@ -702,7 +767,7 @@ footer a{color:var(--faint)}
 
   <footer>
     <span>&copy; 2026 Tigran Barseghyan</span>
-    <span>Apple, the Apple logo and App Store are trademarks of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.</span>
+    <span>Apple, the Apple logo and App Store are trademarks of Apple Inc. Google Play, the Google Play logo and YouTube are trademarks of Google LLC.</span>
   </footer>
 </div>
 </body>
